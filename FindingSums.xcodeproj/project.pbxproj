@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		445B885E2D355B1B0068D470 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B885B2D355B1B0068D470 /* ContentView.swift */; };
+		445B885F2D355B1B0068D470 /* FindingSumsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B885C2D355B1B0068D470 /* FindingSumsApp.swift */; };
+		445B88602D355B1B0068D470 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445B88582D355B1B0068D470 /* Preview Assets.xcassets */; };
+		445B88612D355B1B0068D470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445B885A2D355B1B0068D470 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		445B88472D355B130068D470 /* FindingSums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindingSums.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		445B88582D355B1B0068D470 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		445B885A2D355B1B0068D470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		445B885B2D355B1B0068D470 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		445B885C2D355B1B0068D470 /* FindingSumsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingSumsApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		445B88492D355B130068D470 /* FindingSums */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FindingSums;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		445B88442D355B130068D470 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		445B883E2D355B130068D470 = {
 			isa = PBXGroup;
 			children = (
-				445B88492D355B130068D470 /* FindingSums */,
+				445B885D2D355B1B0068D470 /* FindingSums */,
 				445B88482D355B130068D470 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,25 @@
 				445B88472D355B130068D470 /* FindingSums.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		445B88592D355B1B0068D470 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				445B88582D355B1B0068D470 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		445B885D2D355B1B0068D470 /* FindingSums */ = {
+			isa = PBXGroup;
+			children = (
+				445B885C2D355B1B0068D470 /* FindingSumsApp.swift */,
+				445B88592D355B1B0068D470 /* Preview Content */,
+				445B885A2D355B1B0068D470 /* Assets.xcassets */,
+				445B885B2D355B1B0068D470 /* ContentView.swift */,
+			);
+			path = FindingSums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +81,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				445B88492D355B130068D470 /* FindingSums */,
 			);
 			name = FindingSums;
 			packageProductDependencies = (
@@ -109,6 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445B88602D355B1B0068D470 /* Preview Assets.xcassets in Resources */,
+				445B88612D355B1B0068D470 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445B885E2D355B1B0068D470 /* ContentView.swift in Sources */,
+				445B885F2D355B1B0068D470 /* FindingSumsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
