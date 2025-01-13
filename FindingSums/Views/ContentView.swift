@@ -46,7 +46,7 @@ struct ContentView: View {
                     .minimumScaleFactor(0.5)
  Spacer()
  
- 
+ 22
                 Text("\(secondNumber)")
                     .font(.system(size: 60))
                     .lineLimit(1)
