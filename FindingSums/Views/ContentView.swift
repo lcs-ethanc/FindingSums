@@ -46,7 +46,6 @@ struct ContentView: View {
                     .minimumScaleFactor(0.5)
  Spacer()
  
- 22
                 Text("\(secondNumber)")
                     .font(.system(size: 60))
                     .lineLimit(1)
@@ -56,6 +55,12 @@ struct ContentView: View {
             Stepper(value: $secondNumber, label: {
                 Text("Select Second Number")
             })
+            HStack{
+                Spacer()
+                Text("\(sum)")
+                    .font(.system(size:60))
+            }
+  
             Spacer()
         }
         .padding()
