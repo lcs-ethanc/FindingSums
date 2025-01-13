@@ -8,12 +8,12 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: Stored properties
-    @State var base: Int = 1
-    // @State makes the interface change in real-time to the property's value. A property wrapper
+    @State var firstNumber: Int = 1
+    @State var secondNumber: Int = 1
     
     // MARK: Computed properties
-    var squared: Int{
-        return base*base
+    var sum : Int{
+        return firstNumber+secondNumber
     }
     
     var body: some View {
@@ -24,50 +24,37 @@ struct ContentView: View {
             
             HStack(alignment: .top) {
  
-                Text("(\(base))")
-                    .font(.system(size: 96))
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.5)
+                Spacer()
  
-                Text("2")
-                    .font(.system(size: 44))
- 
-                Text("=")
-                    .font(.system(size: 96))
- 
-                Text("\(squared)")
-                    .font(.system(size: 96))
+                Text("\(firstNumber)")
+                    .font(.system(size: 60))
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
             }
             
-            Stepper(value: $base, label: {
-                Text("Base")
+            Stepper(value: $firstNumber, label: {
+                Text("Select First Number")
             })
             //allows user to provide input on + or -
             //$ is a binder, connecting stepper to value of base
             
             HStack(alignment: .top) {
  
-                Text("(\(base))")
-                    .font(.system(size: 96))
+                Text("+")
+                    .font(.system(size: 60))
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
+ Spacer()
  
-                Text("2")
-                    .font(.system(size: 44))
  
-                Text("=")
-                    .font(.system(size: 96))
- 
-                Text("\(squared)")
-                    .font(.system(size: 96))
+                Text("\(secondNumber)")
+                    .font(.system(size: 60))
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
             }
             
-            Stepper(value: $base, label: {
-                Text("Base")
+            Stepper(value: $secondNumber, label: {
+                Text("Select Second Number")
             })
             Spacer()
         }
