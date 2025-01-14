@@ -41,7 +41,7 @@ struct MinusView: View {
             
             HStack(alignment: .top) {
  
-                Text("+")
+                Text("-")
                     .font(.system(size: 60))
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
