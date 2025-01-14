@@ -5,7 +5,7 @@
  
 import SwiftUI
  
-struct ContentView: View {
+struct PlusView: View {
     
     // MARK: Stored properties
     @State var firstNumber: Int = 1
@@ -68,6 +68,6 @@ struct ContentView: View {
 }
  
 #Preview {
-    ContentView()
+    PlusView()
 }
  

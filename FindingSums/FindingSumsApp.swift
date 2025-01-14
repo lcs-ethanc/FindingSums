@@ -11,7 +11,7 @@ import SwiftUI
 struct FindingSumsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlusView()
         }
     }
 }

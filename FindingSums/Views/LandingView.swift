@@ -11,7 +11,7 @@ struct LandingView: View {
     var body: some View {
         TabView(selection: Binding.constant(1)) {
             
-            ContentView()
+            PlusView()
                 .tabItem {
                     Image(systemName: "globe")
                     Text("Plus")
